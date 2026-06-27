@@ -12,7 +12,7 @@ print(df.head())
 
 cal = Calendar()
 
-with open("calendar.ics", "w") as f:
-    f.writelines(cal)
+with open("calendar.ics", "w", encoding="utf-8") as f:
+    f.write(str(cal))
 
 print("calendar.ics created!")
