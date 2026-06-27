@@ -1,4 +1,4 @@
-mport pandas as pd
+import pandas as pd
 
 SHEET_ID = "1vOgaCYYH2EGlBC4hm_lWaQ5yFDzky6-ZqNni61DbkPc"
 GID = "593313266"
