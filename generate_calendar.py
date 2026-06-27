@@ -10,5 +10,23 @@ df = pd.read_csv(url)
 
 cal = Calendar()
 
+for _, row in df.iterrows():
+    try:
+        title = str(row.get("Event", "")).strip()
+        date = row.get("Date", "")
+
+        if not title or title.lower() == "nan":
+            continue
+
+        event = cal.events.add(
+            name=title,
+            begin=str(pd.to_datetime(date)),
+        )
+
+    except:
+        continue
+
 with open("calendar.ics", "w", encoding="utf-8") as f:
     f.write(str(cal))
+
+print("calendar.ics generated")
