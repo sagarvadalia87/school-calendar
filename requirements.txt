@@ -3,3 +3,4 @@ pandas
 icalendar
 python-dateutil
 openpyxl
+ics
