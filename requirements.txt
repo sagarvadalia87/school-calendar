@@ -1,6 +1,0 @@
-requests
-pandas
-icalendar
-python-dateutil
-openpyxl
-ics
